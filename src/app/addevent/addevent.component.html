@@ -1,0 +1,35 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>ADDevent
+            <p class="lead"></p>
+          </h1>
+        </div>          
+              </div>
+            </div>
+          </div>
+          <br><br>   
+
+          <div class="login">    
+            <form id="login" >    
+                <label><b> Title</b></label>   
+                <br><br>   
+                <input type="text" name="title" id="email"  [(ngModel)]="event.title">    
+                <br><br>    
+                <label><b> Data  </b>  </label>    
+                <input type="text"  name="data" [(ngModel)]="event.date">    
+                <br><br>  
+                <label><b> Description  </b>  </label>    
+                <input type="text"   name="genere"  [(ngModel)]="event.description">    
+                <br><br>  
+                <label><b> Image  </b>  </label>    
+                <input type="file"  name="image"   id="email" (change) ="onFileSelected($event)" >    
+                <br><br>  
+                <button routerLink="/events" type ="submit" (click) ="addEvent()">Add</button>      
+                <br><br>    
+            </form>  
+        </div>
+        <br><br> 
+
+  

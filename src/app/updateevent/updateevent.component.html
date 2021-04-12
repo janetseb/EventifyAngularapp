@@ -1,0 +1,45 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>UPDATE EVENTS
+            <p class="lead"></p>
+          </h1>
+        </div>          
+              </div>
+            </div>
+          </div>
+
+          <br>
+<br>
+          <div class="login">    
+            <form id="login" >    
+                <label><b> Title</b></label>   
+                <br><br>   
+                <input type="text" name="title" id="email"  [(ngModel)]="event.title">    
+                <br><br>    
+                <label><b> Data  </b>  </label>    
+                <input type="text"  name="data" [(ngModel)]="event.data">    
+                <br><br>  
+                <label><b> Description  </b>  </label>    
+                <input type="text"   name="genere"  [(ngModel)]="event.description">    
+                <br><br>  
+                <label><b> Image  </b>  </label>    
+                <input type="file"  name="image"   id="email" (change) ="onFileSelected($event)" >    
+                <br><br>  
+                <button routerLink="/events" type ="submit" (click) ="updateEvent()">Add</button>      
+                <br><br>    
+            </form>  
+        </div>
+        <br> <br>
+
+     
+          <!-- <div class="container"  (ngSubmit)="updateEvent()">    
+            <form >
+                Title: <input type="text" name="title" [(ngModel)]="event.title"> <br>
+                Data: <input type="text" name="data" [(ngModel)]="event.data"> <br>
+                Description: <input type="text" name="genere"  [(ngModel)]="event.description"> <br>
+                Image: <input type="file" name="image" (change) ="onFileSelected($event)"  > <br>
+                <button routerLink="/events" type ="submit" (click) ="updateEvent()">Add</button> <br>
+            </form>
+           </div> -->

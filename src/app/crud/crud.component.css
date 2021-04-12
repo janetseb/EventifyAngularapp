@@ -1,0 +1,33 @@
+  
+#masthead {
+    min-height:199px;
+    background-color:black;
+    color:white;
+  }
+  
+  
+  #masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+    color:#fefeff;
+    margin-top:50px;
+  }
+
+  .space
+  {
+      display:inline-block; 
+      margin-left: 40px; 
+  }
+
+
+  .spaceevent
+  {
+      margin-top: 20px;
+      margin-left: 1400px; 
+  }
+
+  .btn
+  {
+    background-color: black;
+    color: white;
+  }
